@@ -10,11 +10,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Cartao cartao = new Cartao();
+
 
         System.out.println("Digite o limite do cartão:");
-        cartao.setLimite(scanner.nextDouble());
-
+        Cartao cartao = new Cartao(scanner.nextDouble());
 
         ArrayList<Compra> listaDeCompras = new ArrayList<>();
         int i=1;
